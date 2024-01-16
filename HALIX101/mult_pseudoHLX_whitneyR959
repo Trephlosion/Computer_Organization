@@ -1,0 +1,10 @@
+IM 5
+LOAD address1
+MULT address2
+STORE address3
+WRITE address3
+HALT
+
+DM 3
+0014
+0005

@@ -1,0 +1,52 @@
+
+INSTRUCTION MEMORY DUMP
+
+iADR  IMem  OPRTN  OPND
+====  ====  ====== ====
+  00  0300  LOAD   00
+  01  0701  MULT   01
+  02  0402  STORE  02
+  03  0202  WRITE  02
+  04  9900  HALT
+
+
+DATA MEMORY DUMP
+
+ADDR  DMem
+====  ====
+  00  0014
+  01  0005
+  02  -649176320
+
+
+*********************
+HALIX EXECUTION TRACE
+(c) 2018, ver. 11
+Program: mult-whitneyR959.hlx
+*********************
+
+iADR  INST  OPRTN   OPND  RESULT
+----  ----  -----   ----  ------
+  00  0300  LOAD      00    0014
+  01  0701  MULT      01    0070
+  02  0402  STORE     02    0070
+  03  0202  WRITE     02 ==>0070
+  04  9900  HALT 
+
+----  ----  -----   ----  ------
+ADDR  INST  OPRTN   OPND  RESULT
+
+***************************
+END - HALIX EXECUTION TRACE
+Program: mult-whitneyR959.hlx
+4 INSTRUCTIONS EXECUTED. 
+***************************
+
+
+DATA MEMORY DUMP
+
+ADDR  DMem
+====  ====
+  00  0014
+  01  0005
+  02  0070

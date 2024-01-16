@@ -1,0 +1,10 @@
+IM 7
+READ address1
+READ address2
+LOAD address1
+ADD address2
+STORE address3
+WRITE address3
+HALT
+
+DM 3

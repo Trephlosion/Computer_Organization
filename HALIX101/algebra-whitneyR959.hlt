@@ -1,0 +1,76 @@
+
+INSTRUCTION MEMORY DUMP
+
+iADR  IMem  OPRTN  OPND
+====  ====  ====== ====
+  00  0300  LOAD   00
+  01  0700  MULT   00
+  02  0402  STORE  02
+  03  0301  LOAD   01
+  04  0700  MULT   00
+  05  0403  STORE  03
+  06  0302  LOAD   02
+  07  0503  ADD    03
+  08  0404  STORE  04
+  09  0304  LOAD   04
+  10  0601  SUB    01
+  11  0405  STORE  05
+  12  0205  WRITE  05
+  13  9900  HALT
+
+
+DATA MEMORY DUMP
+
+ADDR  DMem
+====  ====
+  00  0003
+  01  0004
+  02  564273888
+  03  32764
+  04  564273880
+  05  32764
+
+
+*********************
+HALIX EXECUTION TRACE
+(c) 2018, ver. 11
+Program: algebra-whitneyR959.hlx
+*********************
+
+iADR  INST  OPRTN   OPND  RESULT
+----  ----  -----   ----  ------
+  00  0300  LOAD      00    0003
+  01  0700  MULT      00    0009
+  02  0402  STORE     02    0009
+  03  0301  LOAD      01    0004
+  04  0700  MULT      00    0012
+  05  0403  STORE     03    0012
+  06  0302  LOAD      02    0009
+  07  0503  ADD       03    0021
+  08  0404  STORE     04    0021
+  09  0304  LOAD      04    0021
+  10  0601  SUB       01    0017
+  11  0405  STORE     05    0017
+  12  0205  WRITE     05 ==>0017
+  13  9900  HALT 
+
+----  ----  -----   ----  ------
+ADDR  INST  OPRTN   OPND  RESULT
+
+***************************
+END - HALIX EXECUTION TRACE
+Program: algebra-whitneyR959.hlx
+13 INSTRUCTIONS EXECUTED. 
+***************************
+
+
+DATA MEMORY DUMP
+
+ADDR  DMem
+====  ====
+  00  0003
+  01  0004
+  02  0009
+  03  0012
+  04  0021
+  05  0017

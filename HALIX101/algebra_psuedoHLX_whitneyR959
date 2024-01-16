@@ -1,0 +1,19 @@
+IM 14
+LOAD address1
+MULT address1
+STORE address3
+LOAD address2
+MULT address1
+STORE address4
+LOAD address3
+ADD address4
+STORE address5
+LOAD address5
+SUB address2
+STORE address6
+WRITE address6
+HALT
+
+DM 6
+0003
+0004
