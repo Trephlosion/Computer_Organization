@@ -1,0 +1,83 @@
+
+INSTRUCTION MEMORY DUMP
+
+iADR  IMem  OPRTN  OPND
+====  ====  ====== ====
+  00  0301  LOAD   01
+  01  1600  INCR   00
+  02  0401  STORE  01
+  03  0201  WRITE  01
+  04  2000  CEQ    00
+  05  1107  BRT    07
+  06  1000  BRANCH 00
+  07  9900  HALT
+
+
+DATA MEMORY DUMP
+
+ADDR  DMem
+====  ====
+  00  0005
+  01  0000
+
+
+*********************
+HALIX EXECUTION TRACE
+(c) 2018, ver. 11
+Program: count-whitneyR959.hlx
+*********************
+
+iADR  INST  OPRTN   OPND  RESULT
+----  ----  -----   ----  ------
+  00  0301  LOAD      01    0000
+  01  1600  INCR    0000    0001
+  02  0401  STORE     01    0001
+  03  0201  WRITE     01 ==>0001
+  04  2000  CEQ       00    0000
+  05  1107  BRT     0000    06
+  06  1000  BRT       00    00
+  00  0301  LOAD      01    0001
+  01  1600  INCR    0001    0002
+  02  0401  STORE     01    0002
+  03  0201  WRITE     01 ==>0002
+  04  2000  CEQ       00    0000
+  05  1107  BRT     0000    06
+  06  1000  BRT       00    00
+  00  0301  LOAD      01    0002
+  01  1600  INCR    0002    0003
+  02  0401  STORE     01    0003
+  03  0201  WRITE     01 ==>0003
+  04  2000  CEQ       00    0000
+  05  1107  BRT     0000    06
+  06  1000  BRT       00    00
+  00  0301  LOAD      01    0003
+  01  1600  INCR    0003    0004
+  02  0401  STORE     01    0004
+  03  0201  WRITE     01 ==>0004
+  04  2000  CEQ       00    0000
+  05  1107  BRT     0000    06
+  06  1000  BRT       00    00
+  00  0301  LOAD      01    0004
+  01  1600  INCR    0004    0005
+  02  0401  STORE     01    0005
+  03  0201  WRITE     01 ==>0005
+  04  2000  CEQ       00    0001
+  05  1107  BRT     0001    07
+  07  9900  HALT 
+
+----  ----  -----   ----  ------
+ADDR  INST  OPRTN   OPND  RESULT
+
+***************************
+END - HALIX EXECUTION TRACE
+Program: count-whitneyR959.hlx
+34 INSTRUCTIONS EXECUTED. 
+***************************
+
+
+DATA MEMORY DUMP
+
+ADDR  DMem
+====  ====
+  00  0005
+  01  0005

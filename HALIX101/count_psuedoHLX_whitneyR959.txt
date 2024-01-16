@@ -1,0 +1,13 @@
+IM 8
+LOAD address2
+INCR
+STORE address2
+WRITE address2
+CEQ address1
+BRT address8
+BRANCH address2
+HALT
+
+DM 2
+Limit 0005
+Count 0000
